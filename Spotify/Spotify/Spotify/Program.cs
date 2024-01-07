@@ -1,7 +1,12 @@
+
+
 var builder = WebApplication.CreateBuilder(args);
+var services = builder.Services;
+
+services.AddRazorPages();
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+services.AddControllersWithViews();
 
 var app = builder.Build();
 
@@ -14,7 +19,12 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
+
+app.MapControllerRoute(
+    name: "Admin",
+    pattern: "/Admin/{controller=Home}/{action=Index}/{id?}");
 
 app.MapControllerRoute(
     name: "default",
