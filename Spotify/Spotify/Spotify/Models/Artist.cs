@@ -4,8 +4,8 @@
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        // Add additional properties specific to artists, such as bio or profile picture
-
+        public string? Bio { get; set; }
+        public string? ProfilePhoto { get; set; }
         public List<User> Followers { get; set; } // List of users who are following this artist
 
         // Constructor
