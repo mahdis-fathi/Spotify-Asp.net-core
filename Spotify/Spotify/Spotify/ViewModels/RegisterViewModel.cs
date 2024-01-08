@@ -6,11 +6,13 @@ namespace Spotify.ViewModels
     public class RegisterViewModel
     {
         [Required]
-        [Remote("IsUsernameInUse", "Account")]
+        [Remote("IsUsernameInUse", "Account", HttpMethod="POST", 
+            AdditionalFields = "_RequestVerificationToken")]
         public string Username { get; set; }
         [EmailAddress]
         [Required]
-        [Remote("IsEmailInUse", "Account")]
+        [Remote("IsEmailInUse", "Account", HttpMethod = "POST",
+            AdditionalFields = "_RequestVerificationToken")]
         public string Email { get; set; }
         [Required]
         [DataType(DataType.Password)]

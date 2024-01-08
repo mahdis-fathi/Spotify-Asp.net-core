@@ -9,7 +9,6 @@ namespace Spotify.Controllers
     public class AccountController : Controller
     {
         private readonly IAccountService _accountService;
-        private readonly IEmailSender _emailSender;
         private readonly SignInManager<User> _signInManager;
         public AccountController(SignInManager<User> signInManager, IAccountService accountService)
         {
@@ -76,6 +75,8 @@ namespace Spotify.Controllers
             await _signInManager.SignOutAsync();
             return RedirectToAction("Login", "Account");
         }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> IsEmailInUse(string email)
         {
             var user = await _accountService.IsEmailInUse(email);
@@ -83,12 +84,67 @@ namespace Spotify.Controllers
                 return Json(true);
             return Json("email already exists") ;
         }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> IsUsernameInUse(string username)
         {
             var user = await _accountService.IsUsernameInUse(username);
             if (user == null)
                 return Json(true);
             return Json("username already exists");
+        }
+        [HttpGet]
+        public async Task<IActionResult> ConfirmEmail(string username, string token)
+        {
+            var result = await _accountService.EmailConfirmation(username, token);
+            if (result == null) 
+                return NotFound();
+            if (result.Succeeded)
+                return Content("Email Confirmed");
+            return Content("Email Not Confirmed");
+        }
+        [HttpPost]
+        public async Task<IActionResult> ForgotPassword(string email)
+        {
+            var result = await _accountService.ForgotPassword(email);
+            if (result == 0)
+                return NotFound();
+            return RedirectToAction("Login", "Account");
+        }
+        [HttpGet]
+        public IActionResult ResetPassword(string username, string token)
+        {
+            // Pass the username and token to the view for form submission
+            var model = new ResetPasswordViewModel
+            {
+                Username = username,
+                Token = token
+            };
+
+            return View(model);
+        }
+        [HttpPost]
+        public async Task<IActionResult> ResetPassword(ResetPasswordViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+            var result = await _accountService.ResetPassword(model.Username, model.Token, 
+                model.NewPassword);
+
+            if (result == null)
+            {
+                return NotFound();
+            }
+
+            if (result.Succeeded)
+            {
+                return Content("Password is Reset");
+            }
+
+            return Content("Password is Not Reset");
         }
     }
 }

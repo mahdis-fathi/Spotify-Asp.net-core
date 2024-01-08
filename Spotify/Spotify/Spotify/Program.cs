@@ -18,7 +18,9 @@ services.AddDbContextPool<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("SqlServer"));
 });
 
-services.AddIdentity<User, IdentityRole>().
+services.AddIdentity<User, IdentityRole>(op => {
+        op.SignIn.RequireConfirmedEmail = true;
+    }).
     AddEntityFrameworkStores<AppDbContext>().
     AddDefaultTokenProviders();
 services.AddControllersWithViews().AddRazorRuntimeCompilation();
