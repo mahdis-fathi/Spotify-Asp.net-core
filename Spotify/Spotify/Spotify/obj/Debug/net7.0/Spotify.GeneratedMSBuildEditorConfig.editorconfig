@@ -16,10 +16,6 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Users\Rayan\Desktop\term7\برنامه نویسی وب\Spotify-Asp.net-core\Spotify\Spotify\Spotify
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Rayan/Desktop/term7/برنامه نویسی وب/Spotify-Asp.net-core/Spotify/Spotify/Spotify/Views/Account/ConfirmEmail.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDb25maXJtRW1haWwuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Rayan/Desktop/term7/برنامه نویسی وب/Spotify-Asp.net-core/Spotify/Spotify/Spotify/Views/Account/ForgetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxGb3JnZXRQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
