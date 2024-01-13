@@ -1,0 +1,353 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Spotify.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Spotify.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\img\\LBvIpo.webp",
+      "PackagePath": "staticwebassets\\img\\LBvIpo.webp"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\img\\ai.jpg",
+      "PackagePath": "staticwebassets\\img\\ai.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\img\\dj.jpg",
+      "PackagePath": "staticwebassets\\img\\dj.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\img\\forgot-password-7.html",
+      "PackagePath": "staticwebassets\\img\\forgot-password-7.html"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\img\\gray.jpg",
+      "PackagePath": "staticwebassets\\img\\gray.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\img\\heart.svg",
+      "PackagePath": "staticwebassets\\img\\heart.svg"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\img\\hero-bg.png",
+      "PackagePath": "staticwebassets\\img\\hero-bg.png"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\img\\hero.png",
+      "PackagePath": "staticwebassets\\img\\hero.png"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\img\\img-5.jpg",
+      "PackagePath": "staticwebassets\\img\\img-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\img\\istockphoto-1076840920-612x612.jpg",
+      "PackagePath": "staticwebassets\\img\\istockphoto-1076840920-612x612.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\img\\login-7.html",
+      "PackagePath": "staticwebassets\\img\\login-7.html"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\img\\logo-white.svg",
+      "PackagePath": "staticwebassets\\img\\logo-white.svg"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\img\\logo.svg",
+      "PackagePath": "staticwebassets\\img\\logo.svg"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\img\\menu-2.svg",
+      "PackagePath": "staticwebassets\\img\\menu-2.svg"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\img\\menu.svg",
+      "PackagePath": "staticwebassets\\img\\menu.svg"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\img\\profile.svg",
+      "PackagePath": "staticwebassets\\img\\profile.svg"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\img\\register-7.html",
+      "PackagePath": "staticwebassets\\img\\register-7.html"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\img\\singer.svg",
+      "PackagePath": "staticwebassets\\img\\singer.svg"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\img\\vibrant-purple-black-digital-illustration-dj-turntable-captivating-generative-ai-creation_561855-12745.avif",
+      "PackagePath": "staticwebassets\\img\\vibrant-purple-black-digital-illustration-dj-turntable-captivating-generative-ai-creation_561855-12745.avif"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\js\\jquery-2.2.0.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-2.2.0.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Spotify.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.Spotify.props",
+      "PackagePath": "build\\Spotify.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.Spotify.props",
+      "PackagePath": "buildMultiTargeting\\Spotify.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.Spotify.props",
+      "PackagePath": "buildTransitive\\Spotify.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

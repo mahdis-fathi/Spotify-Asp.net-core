@@ -12,7 +12,7 @@ build_property.RootNamespace = Spotify
 build_property.ProjectDir = C:\Users\user\source\repos\Spotify-Asp.net-core\Spotify\Spotify\Spotify\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Users\user\source\repos\Spotify-Asp.net-core\Spotify\Spotify\Spotify
 build_property._RazorSourceGeneratorDebug = 
 
@@ -22,6 +22,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/user/source/repos/Spotify-Asp.net-core/Spotify/Spotify/Spotify/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/source/repos/Spotify-Asp.net-core/Spotify/Spotify/Spotify/Views/ManegeRole/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuZWdlUm9sZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/user/source/repos/Spotify-Asp.net-core/Spotify/Spotify/Spotify/Views/Shared/Error.cshtml]

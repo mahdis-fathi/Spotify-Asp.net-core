@@ -1,5 +1,11 @@
 
 
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using Spotify.Models;
+using Spotify.Models.context;
+using Spotify.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 var services = builder.Services;
 
@@ -7,6 +13,21 @@ services.AddRazorPages();
 
 // Add services to the container.
 services.AddControllersWithViews();
+services.AddDbContextPool<AppDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("SqlServer"));
+});
+
+services.AddIdentity<User, IdentityRole>(op => {
+        op.SignIn.RequireConfirmedEmail = true;
+    }).
+    AddEntityFrameworkStores<AppDbContext>().
+    AddDefaultTokenProviders();
+services.AddControllersWithViews().AddRazorRuntimeCompilation();
+services.AddTransient<IAccountService, AccountService>();
+services.AddTransient<IEmailSender, EmailSender>();
+services.AddTransient<IProfile, ProfileService>();
+services.AddTransient<IHome, HomeService>();
 
 var app = builder.Build();
 

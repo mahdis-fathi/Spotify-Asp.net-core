@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Metadata;
 using Spotify.Models;
+using Spotify.Services;
 using System.Diagnostics;
 
 namespace Spotify.Controllers
@@ -7,17 +9,23 @@ namespace Spotify.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IHome _home;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IHome home)
         {
             _logger = logger;
+            _home = home;
         }
 
         public IActionResult Index()
         {
             return View();
         }
-
+        public IActionResult Index(string searchTerm)
+        {
+            var songs = _home.Search(searchTerm);
+            return View(songs);
+        }
         public IActionResult Privacy()
         {
             return View();
