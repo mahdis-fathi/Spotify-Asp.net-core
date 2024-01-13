@@ -20,8 +20,7 @@ namespace Spotify.Services
 
                 songs = songs.Where(s =>
                     s.Title.ToLower().Contains(searchTerm) ||
-                    s.Artist.Name.ToLower().Contains(searchTerm) ||
-                    s.Album.Title.ToLower().Contains(searchTerm)
+                    s.Artist.Name.ToLower().Contains(searchTerm) 
                 ).ToList();
             }
             return songs.ToList();

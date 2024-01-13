@@ -4,8 +4,9 @@ namespace Spotify.Classes
 {
     public class AddRole
     {
-        private readonly AspNetRoleManager<IdentityRole> _roleManager;
-        public AddRole(AspNetRoleManager<IdentityRole> roleManager)
+        private readonly RoleManager<IdentityRole> _roleManager;
+
+        public AddRole(RoleManager<IdentityRole> roleManager)
         {
             _roleManager = roleManager;
         }

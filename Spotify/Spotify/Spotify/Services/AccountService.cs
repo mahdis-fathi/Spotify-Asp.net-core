@@ -15,7 +15,7 @@ namespace Spotify.Services
     {
         private readonly UserManager<User> _userManager;
         private readonly SignInManager<User> _signInManager;
-        private readonly HttpContext _httpContext;
+        private readonly IHttpContextAccessor _httpContextAccessor;
         //private readonly UriBuilder _uriBuilder;
         //private readonly IConfiguration _config;
         private readonly LinkGenerator _linkGenerator;
@@ -23,18 +23,17 @@ namespace Spotify.Services
         private readonly IEmailSender _emailSender;
         public AccountService(UserManager<User> userManager,
             SignInManager<User> signInManager, LinkGenerator linkGenerator,
-            HttpContext httpContext, IEmailSender emailSender, RoleManager<IdentityRole> roleManager)
+            IHttpContextAccessor httpContextAccessor, IEmailSender emailSender, RoleManager<IdentityRole> roleManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;
-            _httpContext = httpContext;
+            _httpContextAccessor = httpContextAccessor;
             //_config = configuration;
             //_uriBuilder = uriBuilder;
             _linkGenerator = linkGenerator;
             _emailSender = emailSender;
             _roleManager = roleManager;
         }
-
         public async Task<IdentityResult> EmailConfirmation(string username, string token)
         {
             if (string.IsNullOrEmpty(token) || string.IsNullOrEmpty(username))
@@ -57,8 +56,14 @@ namespace Spotify.Services
         }
         public async Task<Microsoft.AspNetCore.Identity.SignInResult> Login(LoginViewModel loginViewModel)
         {
-            var result = await _signInManager.PasswordSignInAsync(loginViewModel.Email,
-                    loginViewModel.Password, loginViewModel.RememberMe, true);
+            var user = await _userManager.FindByEmailAsync(loginViewModel.Email);
+            if (user == null)
+            {
+                // User not found
+                return null;
+            }
+
+            var result = await _signInManager.PasswordSignInAsync(user, loginViewModel.Password, false, lockoutOnFailure: false);
             return result;
         }
         public async Task<IdentityResult> Register(RegisterViewModel registerViewModel)
@@ -67,7 +72,7 @@ namespace Spotify.Services
             {
                 UserName = registerViewModel.Username,
                 Email = registerViewModel.Email,
-                EmailConfirmed = true,
+                EmailConfirmed = false
             };
             var result = await _userManager.CreateAsync(user, registerViewModel.Password);
             if (result.Succeeded)
@@ -96,7 +101,7 @@ namespace Spotify.Services
         {
             if (string.IsNullOrEmpty(email))
                 return 0;
-            var user = await _userManager.FindByNameAsync(email);
+            var user = await _userManager.FindByEmailAsync(email);
             if (user == null) return 0;
             var token = await _userManager.GeneratePasswordResetTokenAsync(user);
             var emailMessage = await GenerateLink(token, "Account", "ResetPassword", user.UserName);
@@ -106,6 +111,7 @@ namespace Spotify.Services
         private async Task<string> GenerateLink(string token, string controller, 
             string action, string username)
         {
+            var _httpContext = _httpContextAccessor.HttpContext;
             var url = _linkGenerator.GetPathByAction(action: action, controller: controller, 
                 new { username = username, token = token });
             var emailMessage = $"{_httpContext.Request.Scheme}://{_httpContext.Request.Host}{url}";

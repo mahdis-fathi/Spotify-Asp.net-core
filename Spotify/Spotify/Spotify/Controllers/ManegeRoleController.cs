@@ -6,8 +6,9 @@ namespace Spotify.Controllers
 {
     public class ManegeRoleController : Controller
     {
-        private readonly AspNetRoleManager<IdentityRole> _roleManager;
-        public ManegeRoleController(AspNetRoleManager<IdentityRole> roleManager)
+        private readonly RoleManager<IdentityRole> _roleManager;
+
+        public ManegeRoleController(RoleManager<IdentityRole> roleManager)
         {
             _roleManager = roleManager;
         }

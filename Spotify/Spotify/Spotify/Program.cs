@@ -1,5 +1,3 @@
-
-
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Spotify.Models;
@@ -18,13 +16,17 @@ services.AddDbContextPool<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("SqlServer"));
 });
 
-services.AddIdentity<User, IdentityRole>(op => {
-        op.SignIn.RequireConfirmedEmail = true;
-    }).
-    AddEntityFrameworkStores<AppDbContext>().
-    AddDefaultTokenProviders();
+services.AddIdentity<User, IdentityRole>(options =>
+{
+    options.SignIn.RequireConfirmedEmail = true;
+    options.User.RequireUniqueEmail = true;
+})
+    .AddRoles<IdentityRole>()
+    .AddEntityFrameworkStores<AppDbContext>()
+    .AddDefaultTokenProviders();
+
 services.AddControllersWithViews().AddRazorRuntimeCompilation();
-services.AddTransient<IAccountService, AccountService>();
+services.AddScoped<IAccountService, AccountService>();
 services.AddTransient<IEmailSender, EmailSender>();
 services.AddTransient<IProfile, ProfileService>();
 services.AddTransient<IHome, HomeService>();
@@ -36,10 +38,9 @@ if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
 }
+
 app.UseStaticFiles();
-
 app.UseRouting();
-
 app.UseAuthentication();
 app.UseAuthorization();
 

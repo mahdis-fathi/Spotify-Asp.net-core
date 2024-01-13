@@ -32,7 +32,7 @@
                     </div>
                     <h3>Sign into your account</h3>
                     <div class="login-inner-form">
-                        <form action="login" method="post">
+                        <form asp-controller="Account" asp-action="login" method="post">
                             <div class="form-group form-box">
                                 <input asp-for="@Model.Email" type="email" name="email" class="input-text" placeholder="Email Address">
                                 <i class="flaticon-mail-2"></i>
@@ -48,12 +48,12 @@
                                         Remember me
                                     </label>
                                 </div>
-                                <a href="@Url.Action("ForgetPassword", "Account")">Forgot Password</a>
+                                <a href="@Url.Action("ForgotPassword", "Account")">Forgot Password</a>
                             </div>
                             <div class="form-group mb-0">
                                 <button type="submit" class="btn-md btn-theme btn-block">Login</button>
                             </div>
-                            <p class="text-forget">Don't have an account?<a href="@Url.Action("signup","Account")"> Register here</a></p>
+                            <p class="text-forget">Don't have an account?<a href="@Url.Action("Register","Account")"> Register here</a></p>
                         </form>
                     </div>
                 </div>

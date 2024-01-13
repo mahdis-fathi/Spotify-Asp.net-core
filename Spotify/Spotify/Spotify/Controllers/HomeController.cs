@@ -21,7 +21,7 @@ namespace Spotify.Controllers
         {
             return View();
         }
-        public IActionResult Index(string searchTerm)
+        public IActionResult Search(string searchTerm)
         {
             var songs = _home.Search(searchTerm);
             return View(songs);

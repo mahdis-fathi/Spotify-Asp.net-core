@@ -20,14 +20,18 @@ namespace Spotify.Controllers
         {
             if (_signInManager.IsSignedIn(User))
                 return RedirectToAction("Index", "Home");
-            return View();
+            var model = new RegisterViewModel
+            {
+                Role = "User"
+            };
+            return View(model);
         }
         [HttpPost]
         public async Task<IActionResult> Register(RegisterViewModel registerViewModel)
         {
+            //registerViewModel.Role = "User";
             if (ModelState.IsValid)
-            {
-                registerViewModel.Role = "User";
+            {    
                 var result = await _accountService.Register(registerViewModel);
                 if (result.Succeeded)
                 {
@@ -52,12 +56,12 @@ namespace Spotify.Controllers
         {
             if (_signInManager.IsSignedIn(User))
                 return RedirectToAction("Index", "Home");
-            var result = await _accountService.Login(loginViewModel);
             if (!ModelState.IsValid)
             {
                 return View(loginViewModel);
             }
-            
+            var result = await _accountService.Login(loginViewModel);
+            if (result == null) return View(loginViewModel);
             if (result.Succeeded)
             {
                 return RedirectToAction("Index", "Home");
@@ -101,7 +105,7 @@ namespace Spotify.Controllers
             if (result == null)
                 return RedirectToAction("Login", "Account");
             if (result.Succeeded)
-                return Content("Email Confirmed");
+                return RedirectToAction("Profile", "Home");
             return Content("Email Not Confirmed");
         }
         [HttpGet]
