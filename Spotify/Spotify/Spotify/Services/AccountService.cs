@@ -19,10 +19,11 @@ namespace Spotify.Services
         //private readonly UriBuilder _uriBuilder;
         //private readonly IConfiguration _config;
         private readonly LinkGenerator _linkGenerator;
+        private readonly RoleManager<IdentityRole> _roleManager;
         private readonly IEmailSender _emailSender;
         public AccountService(UserManager<User> userManager,
             SignInManager<User> signInManager, LinkGenerator linkGenerator,
-            HttpContext httpContext, IEmailSender emailSender)
+            HttpContext httpContext, IEmailSender emailSender, RoleManager<IdentityRole> roleManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;
@@ -31,6 +32,7 @@ namespace Spotify.Services
             //_uriBuilder = uriBuilder;
             _linkGenerator = linkGenerator;
             _emailSender = emailSender;
+            _roleManager = roleManager;
         }
 
         public async Task<IdentityResult> EmailConfirmation(string username, string token)
@@ -71,7 +73,10 @@ namespace Spotify.Services
             if (result.Succeeded)
             {
                 await SendEmail(user);
-
+                if (registerViewModel.Role.Equals("User"))
+                    await _userManager.AddToRoleAsync(user, "User");
+                else if (registerViewModel.Role.Equals("Admin"))
+                    await _userManager.AddToRoleAsync(user, "Admin");
             }
             return result;
         }

@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using Spotify.Areas.Admin.Models;
 
 namespace Spotify.Models.context
 {
@@ -11,9 +10,8 @@ namespace Spotify.Models.context
         { 
             
         }
-        //public DbSet<User> Users { get; set; }
+        public DbSet<User> Users { get; set; }
         public DbSet<Artist> Artists { get; set; }
-        //public DbSet<Admin> Admins { get; set; }
         public DbSet<Song> Songs { get; set; }
         public DbSet<Album> Albums { get; set; }
     }

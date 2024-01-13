@@ -5,7 +5,6 @@ namespace Spotify.Models
 {
     public class User : IdentityUser
     {
-        public bool IsActive { get; set; }
         public string? ProfilePhoto { get; set; }
         public List<Song> FavoriteSongs { get; set; } // List of favorite songs for the user
         public List<Artist> FollowedArtists { get; set; } // List of artists the user is following

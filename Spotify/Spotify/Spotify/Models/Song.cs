@@ -5,6 +5,8 @@
         public int Id { get; set; }
         public string Title { get; set; }
         public int AlbumId { get; set; }
+        public int ArtistId { get; set; }
+        public Artist Artist { get; set; }
         public Album Album { get; set; }
         public string AudioURL { get; set; }
         public string? CoverURL { get; set; }

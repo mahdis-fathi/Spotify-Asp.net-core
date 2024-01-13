@@ -26,6 +26,8 @@ services.AddIdentity<User, IdentityRole>(op => {
 services.AddControllersWithViews().AddRazorRuntimeCompilation();
 services.AddTransient<IAccountService, AccountService>();
 services.AddTransient<IEmailSender, EmailSender>();
+services.AddTransient<IProfile, ProfileService>();
+services.AddTransient<IHome, HomeService>();
 
 var app = builder.Build();
 

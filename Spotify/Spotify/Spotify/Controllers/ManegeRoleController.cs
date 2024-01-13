@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Spotify.Classes;
 
 namespace Spotify.Controllers
 {
@@ -9,6 +10,12 @@ namespace Spotify.Controllers
         public ManegeRoleController(AspNetRoleManager<IdentityRole> roleManager)
         {
             _roleManager = roleManager;
+        }
+        public async Task<IActionResult> Index()
+        {
+            var roleAdding = new AddRole(_roleManager);
+            await roleAdding.AddingRole();
+            return View(roleAdding);
         }
     }
 }

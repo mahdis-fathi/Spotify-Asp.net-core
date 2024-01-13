@@ -9,6 +9,7 @@ namespace Spotify.ViewModels
         [Remote("IsUsernameInUse", "Account", HttpMethod="POST", 
             AdditionalFields = "_RequestVerificationToken")]
         public string Username { get; set; }
+        public string Role { get; set; }
         [EmailAddress]
         [Required]
         [Remote("IsEmailInUse", "Account", HttpMethod = "POST",

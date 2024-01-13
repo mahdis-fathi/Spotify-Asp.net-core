@@ -27,6 +27,7 @@ namespace Spotify.Controllers
         {
             if (ModelState.IsValid)
             {
+                registerViewModel.Role = "User";
                 var result = await _accountService.Register(registerViewModel);
                 if (result.Succeeded)
                 {
@@ -63,7 +64,7 @@ namespace Spotify.Controllers
             }
             if (result.IsLockedOut)
             {
-                ViewData["LockedOut"] = "your account is locked out for 5 minutes";
+                ViewData["ErrorMessage"] = "your account is locked out for 5 minutes";
             }
             ModelState.AddModelError( string.Empty, "email or password is wrong");
             return View(loginViewModel);
@@ -97,23 +98,31 @@ namespace Spotify.Controllers
         public async Task<IActionResult> ConfirmEmail(string username, string token)
         {
             var result = await _accountService.EmailConfirmation(username, token);
-            if (result == null) 
-                return NotFound();
+            if (result == null)
+                return RedirectToAction("Login", "Account");
             if (result.Succeeded)
                 return Content("Email Confirmed");
             return Content("Email Not Confirmed");
         }
-        [HttpPost]
-        public async Task<IActionResult> ForgotPassword(string email)
+        [HttpGet]
+        public IActionResult ForgotPassword()
         {
-            var result = await _accountService.ForgotPassword(email);
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> ForgotPassword(ForgotPassword model)
+        {
+            if (!ModelState.IsValid) return View(model);
+            var result = await _accountService.ForgotPassword(model.Email);
             if (result == 0)
-                return NotFound();
+                return RedirectToAction("Login", "Account");
             return RedirectToAction("Login", "Account");
         }
         [HttpGet]
         public IActionResult ResetPassword(string username, string token)
         {
+            if (string.IsNullOrEmpty(token) || string.IsNullOrEmpty(username))
+                return RedirectToAction("Login", "Account");
             // Pass the username and token to the view for form submission
             var model = new ResetPasswordViewModel
             {
@@ -135,16 +144,19 @@ namespace Spotify.Controllers
                 model.NewPassword);
 
             if (result == null)
-            {
-                return NotFound();
-            }
+                return RedirectToAction("Login", "Account");
 
             if (result.Succeeded)
             {
-                return Content("Password is Reset");
+                ViewData["ErrorMessage"] = "Password is Reset sucessfuly";
+                return RedirectToAction("Login", "Account");
             }
 
-            return Content("Password is Not Reset");
+            foreach (var error in result.Errors)
+            {
+                ModelState.AddModelError(string.Empty, error.Description);
+            }
+            return View(model);
         }
     }
 }
