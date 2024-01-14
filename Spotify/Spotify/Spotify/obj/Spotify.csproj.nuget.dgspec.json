@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\Spotify.csproj": {}
+    "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\spotify\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\Spotify.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\Spotify.csproj": {
+    "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\spotify\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\Spotify.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\Spotify.csproj",
+        "projectUniqueName": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\spotify\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\Spotify.csproj",
         "projectName": "Spotify",
-        "projectPath": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\Spotify.csproj",
+        "projectPath": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\spotify\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\Spotify.csproj",
         "packagesPath": "C:\\Users\\Rayan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\obj\\",
+        "outputPath": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\spotify\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rayan\\AppData\\Roaming\\NuGet\\NuGet.Config",

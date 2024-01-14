@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "V/g0gGpA3glgcqR2cauehsLN18guys8vkHJqGIPC0cvEMIqXC8Al7doL2KZNg9I72nYANO/oitYl2UXZ5wxkOw==",
+  "dgSpecHash": "8FO8GCGtdSft+z30wGEVIrgVayP6A2WOoJq8Gw3EpeAm9PwJd9uzIsAe9rhe+C6FXm7V2HNktnJMMMyk/4HEBw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\Spotify.csproj",
+  "projectFilePath": "C:\\Users\\Rayan\\Desktop\\term7\\برنامه نویسی وب\\spotify\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\Spotify.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rayan\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Rayan\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
