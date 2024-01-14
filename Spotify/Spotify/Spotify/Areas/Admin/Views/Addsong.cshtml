@@ -1,0 +1,43 @@
+﻿<!-- add-song.html -->
+<html>
+<head>
+    <title>Add Song</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        input {
+            height: 2.5rem !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Add New Song</h1>
+        <form>
+            <div class="form-group">
+                <label for="songName">Name</label>
+                <input type="text" class="form-control" id="songName" placeholder="Enter song name">
+            </div>
+            <div class="form-group">
+                <label for="singerName">Singer</label>
+                <input type="text" class="form-control" id="singerName" placeholder="Enter singer name">
+            </div>
+            <div class="form-group">
+                <label for="songURL">URL</label>
+                <input type="text" class="form-control" id="songURL" placeholder="Enter song URL">
+            </div>
+            <div class="form-group">
+                <label for="songImage">Image</label>
+                <input type="text" class="form-control" id="songImage" placeholder="Enter song image URL">
+            </div>
+            <div class="form-group">
+                <label for="songDuration">Duration</label>
+                <input type="text" class="form-control" id="songDuration" placeholder="Enter song duration">
+            </div>
+            <button type="submit" class="btn btn-primary">Save</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
