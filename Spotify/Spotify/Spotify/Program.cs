@@ -30,6 +30,8 @@ services.AddScoped<IAccountService, AccountService>();
 services.AddTransient<IEmailSender, EmailSender>();
 services.AddTransient<IProfile, ProfileService>();
 services.AddTransient<IHome, HomeService>();
+services.AddTransient<ISong, SongService>();
+services.AddTransient<IArtist, ArtistService>();
 
 var app = builder.Build();
 

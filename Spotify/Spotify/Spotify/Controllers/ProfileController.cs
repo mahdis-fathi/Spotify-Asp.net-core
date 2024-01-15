@@ -9,15 +9,18 @@ namespace Spotify.Controllers
     [Authorize(Roles = "User")]
     public class ProfileController : Controller
     {
+        private readonly UserManager<User> _userManager;
         private readonly IProfile _profile;
-        public ProfileController(IProfile profile)
+        public ProfileController(IProfile profile, UserManager<User> userManager)
         {
+            _userManager = userManager;
             _profile = profile;
         }
         [HttpGet]
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var user = await _userManager.GetUserAsync(User);
+            return View(user);
         }
         [HttpGet]
         public async Task<IActionResult> EditUser(string userId)
