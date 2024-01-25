@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Spotify.Models.User>
+
+<section>
+    <div class="text-center text-white mt-4">
+        <h2>FOLLOWERS</h2>
+    </div>
+    <hr class="w-25 text-white hr-bold" />
+    <div class="container">
+        <div class="row mt-4">
+            @foreach (var user in Model)
+            {
+                <div class="col mt-4 ">
+                    <div class="singer-card text-center text-white " style="background-image: url('https://michael-zhigulin.github.io/mz-codepen-projects/Material%20Design%20UI%20Audio%20Player/tim_minchin_piano.jpg')">
+                        <div class="mask"></div>
+                        <a class="mb-2 text-white text-decoration-none" asp-action="Index" asp-controller="Profile" asp-route-id="@user.Id">@user.UserName</a>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>

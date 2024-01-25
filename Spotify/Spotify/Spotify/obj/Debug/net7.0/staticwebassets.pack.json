@@ -17,6 +17,210 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\flaticon\\font\\Flaticon.eot",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\font\\Flaticon.eot"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\flaticon\\font\\Flaticon.svg",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\font\\Flaticon.svg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\flaticon\\font\\Flaticon.ttf",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\font\\Flaticon.ttf"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\flaticon\\font\\Flaticon.woff",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\font\\Flaticon.woff"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\flaticon\\font\\Flaticon.woff2",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\font\\Flaticon.woff2"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\flaticon\\font\\_flaticon.scss",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\font\\_flaticon.scss"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\flaticon\\font\\flaticon.css",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\font\\flaticon.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\flaticon\\font\\flaticon.html",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\font\\flaticon.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\flaticon\\license\\license.pdf",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\license\\license.pdf"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\font-awesome\\HELP-US-OUT.txt",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\HELP-US-OUT.txt"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\font-awesome\\css\\font-awesome.css",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\css\\font-awesome.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\font-awesome\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\font-awesome\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\font-awesome\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\font-awesome\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\font-awesome\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\font-awesome\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\font-awesome\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\font-awesome\\less\\animated.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\less\\animated.less"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\font-awesome\\less\\bordered-pulled.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\less\\bordered-pulled.less"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\font-awesome\\less\\core.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\less\\core.less"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\font-awesome\\less\\fixed-width.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\less\\fixed-width.less"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\font-awesome\\less\\font-awesome.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\less\\font-awesome.less"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\font-awesome\\less\\icons.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\less\\icons.less"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\font-awesome\\less\\larger.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\less\\larger.less"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\font-awesome\\less\\list.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\less\\list.less"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\font-awesome\\less\\mixins.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\less\\mixins.less"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\font-awesome\\less\\path.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\less\\path.less"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\font-awesome\\less\\rotated-flipped.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\less\\rotated-flipped.less"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\font-awesome\\less\\screen-reader.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\less\\screen-reader.less"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\font-awesome\\less\\stacked.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\less\\stacked.less"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\font-awesome\\less\\variables.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\less\\variables.less"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\font-awesome\\scss\\_animated.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\scss\\_animated.scss"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\font-awesome\\scss\\_bordered-pulled.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\scss\\_bordered-pulled.scss"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\font-awesome\\scss\\_core.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\scss\\_core.scss"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\font-awesome\\scss\\_fixed-width.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\scss\\_fixed-width.scss"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\font-awesome\\scss\\_icons.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\scss\\_icons.scss"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\font-awesome\\scss\\_larger.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\scss\\_larger.scss"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\font-awesome\\scss\\_list.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\scss\\_list.scss"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\font-awesome\\scss\\_mixins.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\scss\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\font-awesome\\scss\\_path.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\scss\\_path.scss"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\font-awesome\\scss\\_rotated-flipped.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\scss\\_rotated-flipped.scss"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\font-awesome\\scss\\_screen-reader.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\scss\\_screen-reader.scss"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\font-awesome\\scss\\_stacked.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\scss\\_stacked.scss"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\font-awesome\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\scss\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\font-awesome\\scss\\font-awesome.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome\\scss\\font-awesome.scss"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\glyphicons-halflings-regular.eot",
+      "PackagePath": "staticwebassets\\fonts\\glyphicons-halflings-regular.eot"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\glyphicons-halflings-regular.svg",
+      "PackagePath": "staticwebassets\\fonts\\glyphicons-halflings-regular.svg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\glyphicons-halflings-regular.ttf",
+      "PackagePath": "staticwebassets\\fonts\\glyphicons-halflings-regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\glyphicons-halflings-regular.woff",
+      "PackagePath": "staticwebassets\\fonts\\glyphicons-halflings-regular.woff"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\fonts\\glyphicons-halflings-regular.woff2",
+      "PackagePath": "staticwebassets\\fonts\\glyphicons-halflings-regular.woff2"
+    },
+    {
       "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\img\\LBvIpo.webp",
       "PackagePath": "staticwebassets\\img\\LBvIpo.webp"
     },
@@ -25,8 +229,16 @@
       "PackagePath": "staticwebassets\\img\\ai.jpg"
     },
     {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\img\\delete.svg",
+      "PackagePath": "staticwebassets\\img\\delete.svg"
+    },
+    {
       "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\img\\dj.jpg",
       "PackagePath": "staticwebassets\\img\\dj.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\img\\download.svg",
+      "PackagePath": "staticwebassets\\img\\download.svg"
     },
     {
       "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\img\\forgot-password-7.html",
@@ -35,6 +247,14 @@
     {
       "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\img\\gray.jpg",
       "PackagePath": "staticwebassets\\img\\gray.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\img\\heart-red.svg",
+      "PackagePath": "staticwebassets\\img\\heart-red.svg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\img\\heart-white.svg",
+      "PackagePath": "staticwebassets\\img\\heart-white.svg"
     },
     {
       "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\img\\heart.svg",
@@ -77,6 +297,18 @@
       "PackagePath": "staticwebassets\\img\\menu.svg"
     },
     {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\img\\music.svg",
+      "PackagePath": "staticwebassets\\img\\music.svg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\img\\pause.svg",
+      "PackagePath": "staticwebassets\\img\\pause.svg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\img\\play.svg",
+      "PackagePath": "staticwebassets\\img\\play.svg"
+    },
+    {
       "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\img\\profile.svg",
       "PackagePath": "staticwebassets\\img\\profile.svg"
     },
@@ -87,6 +319,10 @@
     {
       "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\img\\singer.svg",
       "PackagePath": "staticwebassets\\img\\singer.svg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\img\\spotify.png",
+      "PackagePath": "staticwebassets\\img\\spotify.png"
     },
     {
       "Id": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\wwwroot\\img\\vibrant-purple-black-digital-illustration-dj-turntable-captivating-generative-ai-creation_561855-12745.avif",

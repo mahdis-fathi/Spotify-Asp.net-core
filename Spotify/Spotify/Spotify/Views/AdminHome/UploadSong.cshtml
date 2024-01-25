@@ -1,0 +1,47 @@
+﻿@model Spotify.ViewModels.UploadSong
+
+<html>
+<head>
+    <title>Add Song</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        input {
+            height: 2.5rem !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Add New Song</h1>
+        <form asp-controller="AdminHome" asp-action="UploadSong" method="post" enctype="multipart/form-data">
+
+            <div class="form-group">
+                <label asp-for="Title">Name</label>
+                <input asp-for="Title" class="form-control" placeholder="Enter song name">
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ArtistName">Artist Name</label>
+                <input asp-for="ArtistName" class="form-control" placeholder="Enter artist name">
+                <span asp-validation-for="ArtistName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CoverURL">Image</label>
+                <input asp-for="CoverURL" class="form-control" placeholder="Enter song image URL">
+                <span asp-validation-for="CoverURL" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Duration">Duration</label>
+                <input asp-for="Duration" class="form-control" placeholder="Enter song duration">
+                <span asp-validation-for="Duration" class="text-danger"></span>
+            </div>
+            <input type="file" name="MusicFile" id="musicFile" accept=".mp3, .wav" />
+            <button type="submit" class="btn btn-primary">Add Song</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

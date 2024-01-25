@@ -836,3 +836,5 @@ C:\Users\user\source\repos\Spotify-Asp.net-core\Spotify\Spotify\Spotify\obj\Debu
 C:\Users\user\source\repos\Spotify-Asp.net-core\Spotify\Spotify\Spotify\obj\Debug\net7.0\Spotify.pdb
 C:\Users\user\source\repos\Spotify-Asp.net-core\Spotify\Spotify\Spotify\obj\Debug\net7.0\Spotify.genruntimeconfig.cache
 C:\Users\user\source\repos\Spotify-Asp.net-core\Spotify\Spotify\Spotify\obj\Debug\net7.0\ref\Spotify.dll
+C:\Users\user\source\repos\Spotify-Asp.net-core\Spotify\Spotify\Spotify\bin\Debug\net7.0\AWSSDK.Core.dll
+C:\Users\user\source\repos\Spotify-Asp.net-core\Spotify\Spotify\Spotify\bin\Debug\net7.0\AWSSDK.S3.dll

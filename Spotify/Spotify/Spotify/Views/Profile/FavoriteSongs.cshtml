@@ -1,0 +1,79 @@
+﻿@model IEnumerable<Spotify.Models.Song>
+
+<section style="margin-bottom: 80px">
+    <div class="text-center text-white mt-4">
+        <h2>FAVORITE SONGS</h2>
+    </div>
+    <hr class="w-25 text-white hr-bold" />
+    <div class="container">
+        <div class="row mt-4">
+            @foreach (var song in Model)
+            {
+                <div class="col mt-4">
+                    <div class="song-card" style="background-image: url(@song.CoverURL);background-size: cover;
+                        background-repeat: no-repeat">
+                        <div class="like waves-effect waves-light">
+                            @if (Model.Contains(song))
+                            {
+                                <a href="#" data-song-id="@song.Id">
+                                    <img src="~/img/heart-red.svg"></img>
+                                </a>
+                            }
+                            else
+                            {
+                                <a href="#" data-song-id="@song.Id">
+                                    <img src="~/img/heart-white.svg"></img>
+                                </a>
+                            }
+                        </div>
+                        <div class="mask"></div>
+                        <ul class="player-info info-one">
+                            <li>@song.Title</li>
+                            <li><a class="text-decoration-none text-white" asp-controller="Artist" asp-action="ArtistProfile" asp-route-id="@song.ArtistId">@song.Artist.Name</a></li>
+                            <li class="text-white">@song.Duration</li>
+                        </ul>
+
+                        <div class="unchecked play-btn" data-img="@song.CoverURL" data-song-url="@song.AudioURL" data-name="@song.Title" data-singer="@song.Artist.Name" data-duration="@song.Duration">
+                            <i class="icon icon-play"></i>
+                        </div>
+                    </div>
+                </div>
+            }
+            </div>
+        </div>
+</section>
+
+<div id="song-player" class="text-white fixed-bottom" style="position:fixed; margin-bottom:-70px">
+    <div id="player">
+        <div id="player-track">
+            <div id="album-name">Tim Minchin</div>
+            <div id="track-name">Rock'n'Roll Nerd</div>
+            <div id="track-time">
+                <div id="current-time">5:34</div>
+                <div id="track-length"></div>
+            </div>
+            <div id="s-area">
+                <div id="ins-time"></div>
+                <div id="s-hover"></div>
+                <div id="seek-bar"></div>
+            </div>
+        </div>
+        <div id="player-content">
+            <div id="album-art">
+                <img src="https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_1.jpg" class="active" id="_1">
+                <div id="buffer-box">Buffering ...</div>
+            </div>
+            <div id="player-controls">
+                <div class="control">
+                    <img src="~/img/play.svg" id="play-pause-button" width="1000" height="1000" alt="Play Button">
+                </div>
+                <div class="control">
+                    <a id="download-button" class="button" href="" download>
+                        <img src="~/img/download.svg" id="download-button" width="1000" height="1000" alt="Download Button">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <audio id="audio" preload="metadata" src=""></audio>
+    </div>
+</div>

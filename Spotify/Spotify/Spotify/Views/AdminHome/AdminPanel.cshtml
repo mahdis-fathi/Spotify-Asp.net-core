@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Spotify.Models.Song>
+
+<html>
+<head>
+    <title>Songs</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Songs</h1>
+        <table class="table  table-hover">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Singer</th>
+                    <th>URL</th>
+                    <th>Image</th>
+                    <th>Duration</th>
+                    <th>Delete Song</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(var song in Model)
+                {
+                    <tr>
+                        <td>@song.Title</td>
+                        <td>@song.Artist.Name</td>
+                        <td><a href="@song.AudioURL">link</a></td>
+                        <td><img src="@song.CoverURL" alt="@song.Title" width="50" height="50"></td>
+                        <td>@song.Duration</td>
+                        <td><button class="btn btn-danger" onclick="deleteSong(this)"><img src="~/img/delete.svg" width="20" height="20" /></button></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <a class="btn btn-primary" asp-controller="AdminHome" asp-action="UploadSong">Add song</a>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        function deleteSong(button) {
+            var row = button.parentNode.parentNode;
+            row.parentNode.removeChild(row);
+            // Perform additional delete action here, such as making an AJAX request to delete the song from the server
+        }
+
+
+    </script>
+</body>
+</html>

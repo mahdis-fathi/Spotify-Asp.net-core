@@ -1,8 +1,105 @@
-﻿@{
+﻿@model Spotify.ViewModels.HomeViewModel
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<section>
+    <div class="s003">
+        <form>
+            <div class="inner-form">
+
+                <div class="input-field second-wrap">
+                    <input id="search" type="text" placeholder="Serach your song...." value="" />
+                </div>
+                <div class="input-field third-wrap">
+                    <button class="btn-search" type="button">
+                        <svg class="svg-inline--fa fa-search fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+<section>
+    <div class="text-center text-white mt-4">
+        <h2>LIST OF SONGS</h2>
+    </div>
+    <hr class="w-25 text-white hr-bold" />
+    <div class="container">
+        <div id="songs-list" class="row mt-4">
+            @foreach (var song in Model.Songs)
+            {
+                if (song.CoverURL == null)
+                    song.CoverURL = "https://michael-zhigulin.github.io/mz-codepen-projects/Material%20Design%20UI%20Audio%20Player/tim_minchin_piano.jpg";
+                <div class="col mt-4">
+                    <div class="song-card" style="background-image: url(@song.CoverURL);background-size: cover;
+                        background-repeat: no-repeat">
+                        <div class="like waves-effect waves-light">
+                            @if (Model.Favorites.Contains(song))
+                            {
+                                <a href="#" data-song-id="@song.Id">
+                                    <img src="~/img/heart-red.svg"></img>
+                                </a>
+                            }
+                            else
+                            {
+                                <a href="#" data-song-id="@song.Id">
+                                    <img src="~/img/heart-white.svg"></img>
+                                </a>
+                            }
+                        </div>
+                        <div class="mask"></div>
+                        <ul class="player-info info-one">
+                            <li>@song.Title</li>
+                            <li><a class="text-decoration-none text-white" asp-controller="Artist" asp-action="ArtistProfile" asp-route-id="@song.ArtistId">@song.Artist.Name</a></li>
+                            <li class="text-white">@song.Duration</li>
+                        </ul>
+                        <div class="unchecked play-btn" data-img="@song.CoverURL" data-song-url="@song.AudioURL" data-name="@song.Title" data-singer="@song.Artist.Name" data-duration="@song.Duration">
+                            <i class="icon icon-play"></i>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<div id="song-player" class="text-white">
+    <div id="player">
+        <div id="player-track">
+            <div id="album-name">Tim Minchin</div>
+            <div id="track-name">Rock'n'Roll Nerd</div>
+            <div id="track-time">
+                <div id="current-time">5:34</div>
+                <div id="track-length"></div>
+            </div>
+            <div id="s-area">
+                <div id="ins-time"></div>
+                <div id="s-hover"></div>
+                <div id="seek-bar"></div>
+            </div>
+        </div>
+        <div id="player-content">
+            <div id="album-art">
+                <img src="https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_1.jpg" class="active" id="_1">
+                <div id="buffer-box">Buffering ...</div>
+            </div>
+            <div id="player-controls">
+                <div class="control">
+                    <img src="~/img/play.svg" id="play-pause-button" width="1000" height="1000" alt="Play Button">
+                </div>
+                <div class="control">
+                    <a id="download-button" class="button" href="" download>
+                        <img src="~/img/download.svg" id="download-button" width="1000" height="1000" alt="Download Button">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <audio id="audio" preload="metadata" src=""></audio>
+    </div>
 </div>
+
+

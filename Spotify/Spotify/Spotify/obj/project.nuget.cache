@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "qlphZXbupkhZM5DtE1E8F9ebhEFXIcRHgjgSPPWyiSVjNAPEZx5GuPzdfElWSRTknivzmLXvGCUSPOPG2+4w3g==",
+  "dgSpecHash": "Hj1pUtkTVWg6RxJ7Uy4ld3ohM7F2KvMpMeeQ/wLhzQ34C54rta8mvUX3P78hAsdHZ3w/p1Ncmy9/QXvZXd8jTg==",
   "success": true,
   "projectFilePath": "C:\\Users\\user\\source\\repos\\Spotify-Asp.net-core\\Spotify\\Spotify\\Spotify\\Spotify.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\awssdk.core\\3.7.301.7\\awssdk.core.3.7.301.7.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\awssdk.s3\\3.7.305.12\\awssdk.s3.3.7.305.12.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

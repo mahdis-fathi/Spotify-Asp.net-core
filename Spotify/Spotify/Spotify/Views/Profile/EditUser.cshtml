@@ -1,0 +1,35 @@
+﻿@model Spotify.Models.User
+
+<div class="login-7">
+    <div class="container">
+        <div class="row login-box">
+            <div class="col-lg-5 col-md-12 bg-img none-992 col-pad-0 align-self-center">
+                <div class="info">
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-12 bg-color-16 align-self-center">
+                <div class="form-section">
+                    <div class="logo-2 clearfix">
+                        <a href="login-7.html">
+                            <img src="assets/img/logos/logo-2.png" alt="logo">
+                        </a>
+                    </div>
+                    <h3>Edit Username</h3>
+                    <div class="login-inner-form">
+                        <form asp-controller="Profile" asp-action="EditUser" method="post">
+                            
+                            <div class="form-group form-box">
+                                <label asp-for="UserName" class="control-label"></label>
+                                <input asp-for="UserName" class="form-control" />
+                                <span asp-validation-for="UserName" class="text-danger"></span>
+                            </div>
+                            <div class="form-group mb-0">
+                                <button type="submit" class="btn-md btn-theme btn-block">Edit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

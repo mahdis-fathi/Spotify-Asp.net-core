@@ -1,0 +1,82 @@
+﻿@model Spotify.ViewModels.ArtistProfie
+
+<div class="container mt-4 mb-4 p-3 d-flex justify-content-center profile">
+    <div class="card p-4">
+        <div class=" image d-flex flex-column justify-content-center align-items-center">
+            <button class="btn btn-secondary" style="background-image: url(@Model.artist.ProfilePhoto);background-size: cover;
+                        background-repeat: no-repeat">
+            </button> <span class="name mt-3">@Model.artist.Name</span> <span class="idd">@Model.artist.Bio</span>
+            <div class="d-flex flex-row justify-content-center align-items-center gap-2">
+            </div>
+
+
+        </div>
+        <div class="row mt-5">
+            <div class="col text-center ">
+                <a class="text-white btn-profile p-2" style="display: block;" asp-controller="Artist" asp-action="ArtistsSongs" asp-route-id="@Model.ArtistId">
+                    <img src="~/img/music.svg" height="35" width="35" style="display: block; margin: 0 auto;"/>
+                    Songs
+                </a>
+            </div>
+            <div class="col text-center ">
+                <a class="text-white btn-profile p-2" style="display: block;" asp-controller="Artist" asp-action="FollowersList" asp-route-id="@Model.ArtistId">
+                    <img src="~/img/profile.svg" height="35" width="35" style="display: block; margin: 0 auto;" />
+                    Followers
+                </a>
+            </div>
+        @if (Model.user.FollowedArtists.Contains(Model.artist))
+        {
+            <div class="mb-2 d-flex mt-2">
+                <button class="btn1 btn-dark w-100 follow" data-artist-id="@Model.ArtistId">Unfollow -</button>
+            </div>
+        }
+        else
+        {
+            <div class="mb-2 d-flex mt-2">
+                <button class="btn1 btn-dark w-100 follow" data-artist-id="@Model.ArtistId">Follow +</button>
+            </div>
+        }
+        </div>
+
+        <div class=" px-2 rounded mt-4 date text-center "> <span class="join">Joined May,2021</span> </div>
+    </div>
+</div>
+
+<!-- Add jQuery library to your view -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        // Handle the click event of the follow button
+        $('.btn1.follow').click(function (e) {
+            e.preventDefault(); // Prevent the default form submission
+
+            var artistId = $(this).data('artist-id'); // Get the artist ID from the data attribute
+            var button = $(this); // Store a reference to the button element
+
+            // Send an AJAX request to the server
+            $.ajax({
+                url: '/Artist/FollowingArtist',
+                type: 'GET',
+                data: { id: artistId },
+                success: function (response) {
+                    // Update the UI based on the response
+                    if (response.success) {
+                        if (response.message === "Artist followed successfully") {
+                            // Update the button text and class for the followed artist
+                            button.text('Unfollow -');
+                        } else {
+                            // Update the button text and class for the unfollowed artist
+                            button.text('Follow +');
+                        }
+                    }
+                },
+                error: function (xhr) {
+                    // Handle the error response
+                    console.log('Error following artist');
+                }
+            });
+        });
+    });
+</script>
+

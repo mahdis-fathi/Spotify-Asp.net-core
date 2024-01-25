@@ -8,6 +8,50 @@ header {
     background-color: rgb(0, 0, 0, 0/86);
 }
 
+
+.navbar {
+    background-color: #333333;
+    height: 5rem;
+    margin-bottom: 0px;
+}
+
+.navbar-header {
+    position: absolute;
+}
+
+#login-btn {
+    border: none;
+    display: inline-grid;
+    width: 10rem;
+    height: 3rem;
+    color: white;
+    background-color: #4000ba !important;
+    border-radius: 10px;
+    text-decoration: none;
+    align-content: center;
+}
+
+    #login-btn:hover {
+        background-color: #1d006e !important;
+    }
+
+#logout-btn {
+    border: none;
+    display: inline-grid;
+    width: 10rem;
+    height: 3rem;
+    color: white;
+    background-color: #1d006e !important;
+    border-radius: 10px;
+    text-decoration: none;
+    align-content: center;
+}
+
+    #logout-btn:hover {
+        background-color: #4000ba !important;
+    }
+
+
 body {
    background: #403f3f
 }
@@ -134,7 +178,7 @@ body {
     }
 
     .login-7 .info {
-        height: 450px;
+        height: 40rem;
     }
 
     .login-7 .login-inner-form .btn-md {
@@ -1106,7 +1150,13 @@ legend {
     justify-content: center;
 }
 
-.player {
+
+.singer-card:hover .mask {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 1s;
+}
+
+.song-card {
     margin-left: 1.5rem;
     position: relative;
     background-color: #ffffff;
@@ -1119,12 +1169,12 @@ legend {
     z-index: 1;
 }
 
-    .player:hover .mask {
+    .song-card:hover .mask {
         background-color: rgba(255, 255, 255, 0.1);
         transition: all 1s;
     }
 
-    .player .like {
+    .song-card .like {
         position: absolute;
         width: 35px;
         height: 35px;
@@ -1140,11 +1190,11 @@ legend {
         cursor: pointer;
     }
 
-    .player .icon-heart {
+    .song-card .icon-heart {
         display: block;
     }
 
-    .player .mask {
+    .song-card .mask {
         width: 100%;
         height: 100%;
         background-color: rgba(255, 255, 255, 0.2);
@@ -1158,7 +1208,7 @@ legend {
     bottom: 0;
     z-index: 4;
     list-style: none;
-    color: #262626;
+    color: #ffffff;
     transform: scale(1);
 }
 
@@ -1195,7 +1245,7 @@ legend {
         clear: both;
     }
 
-.player #play-button {
+.song-card .play-btn {
     box-sizing: border-box;
     position: absolute;
     width: 4.5rem;
@@ -1203,24 +1253,22 @@ legend {
     border-radius: 50%;
     background-color: var(--primary-color);
     box-shadow: 0 8px 25px 6px rgba(0, 0, 0, 0.5);
-    right: 40px;
-    bottom: 8rem;
+    right: 1rem;
+    bottom: 1.5rem;
     z-index: 5;
     cursor: pointer;
     transition: all 70ms;
     border: none;
 }
 
-    .player #play-button:hover {
-        width: 4rem;
-        height: 4rem;
+    .song-card .play-btn:hover {
+        width: 5rem;
+        height: 5rem;
         box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.5);
-        right: 45px;
-        bottom: 7.75rem;
         transition: all 70ms;
     }
 
-    .player #play-button .icon-play {
+    .song-card .play-btn .icon-play {
         position: absolute;
         font-size: 1.5em;
         left: 52%;
@@ -1230,126 +1278,15 @@ legend {
         color: #ffffff;
     }
 
-    .player #play-button:hover .icon-play {
-        font-size: 1.2em;
+    .song-card .play-btn:hover .icon-play {
+        font-size: 1.75em;
         transition: all 70ms;
     }
 
-    .player #play-button .icon-cancel {
-        position: absolute;
-        font-size: 1.6em;
-        left: 50%;
-        top: 49%;
-        transform: translate(-50%, -51%);
-        color: #ffffff;
-    }
 
-.control-row {
-    position: absolute;
-    bottom: -1px;
-    width: 100%;
-    height: 10rem;
-    background-color: #ffffff;
-    overflow: hidden;
-    z-index: 3;
-}
+    
 
-    .control-row #pause-button {
-        box-sizing: border-box;
-        position: absolute;
-        width: 2.5rem;
-        height: 2.5rem;
-        border-radius: 50%;
-        background-color: #f2f2f2;
-        left: 1rem;
-        bottom: 4rem;
-        z-index: 5;
-        cursor: pointer;
-        border: none;
-        transform: scale(0);
-        display: none;
-        -webkit-animation: scale-animation 0.4s;
-        animation: scale-animation 0.4s;
-        -webkit-animation-fill-mode: forwards;
-        animation-fill-mode: forwards;
-        -webkit-animation-delay: 0.3s;
-        animation-delay: 0.3s;
-    }
 
-        .control-row #pause-button .icon-pause {
-            position: absolute;
-            font-size: 1.5em;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            transition: all 0.1s;
-            color: #424242;
-        }
-
-        .control-row #pause-button .icon-play {
-            position: absolute;
-            font-size: 1.5em;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            transition: all 0.1s;
-            color: #424242;
-        }
-
-    .control-row .seek-field {
-        bottom: 5.2rem;
-        left: 4rem;
-        position: absolute;
-        width: 170px;
-        z-index: 5;
-        transform: scale(0);
-        display: none;
-        -webkit-animation: scale-animation 0.4s;
-        animation: scale-animation 0.4s;
-        -webkit-animation-fill-mode: forwards;
-        animation-fill-mode: forwards;
-        -webkit-animation-delay: 0.3s;
-        animation-delay: 0.3s;
-    }
-
-    .control-row .volume-field {
-        bottom: 67px;
-        right: 127px;
-        position: absolute;
-        width: 50px;
-        z-index: 5;
-        transform: scale(0);
-        display: none;
-        -webkit-animation: scale-animation 0.4s;
-        animation: scale-animation 0.4s;
-        -webkit-animation-fill-mode: forwards;
-        animation-fill-mode: forwards;
-        -webkit-animation-delay: 0.3s;
-        animation-delay: 0.3s;
-    }
-
-    .control-row .volume-icon {
-        width: 20px;
-        height: 20px;
-        position: absolute;
-        border-radius: 50%;
-        bottom: 58px;
-        right: 185px;
-        z-index: 5;
-        font-size: 1.2em;
-        display: none;
-        transform: scale(0);
-        -webkit-animation: scale-animation 0.4s;
-        animation: scale-animation 0.4s;
-        -webkit-animation-fill-mode: forwards;
-        animation-fill-mode: forwards;
-        -webkit-animation-delay: 0.3s;
-        animation-delay: 0.3s;
-    }
-
-        .control-row .volume-icon .icon-volume-up {
-            color: #424242;
-        }
 
 .like-active {
     color: #ef5350;
@@ -1387,80 +1324,9 @@ legend {
     }
 }
 
-.waves-animation-one {
-    position: absolute;
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
-    background-color: var(--primary-color);
-    z-index: 3;
-    left: 42.5%;
-    transform: scale(0);
-    -webkit-animation: waves-animation-one 0.25s;
-    animation: waves-animation-one 0.25s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    -webkit-animation-delay: 0.3s;
-    animation-delay: 0.3s;
-    display: none;
-}
 
-@-webkit-keyframes waves-animation-one {
-    0% {
-        transform: scale(1);
-    }
 
-    99% {
-        transform: scale(7.8);
-    }
 
-    100% {
-        transform: scale(7.8);
-    }
-}
-
-@keyframes waves-animation-one {
-    0% {
-        transform: scale(1);
-    }
-
-    99% {
-        transform: scale(7.8);
-    }
-
-    100% {
-        transform: scale(7.8);
-    }
-}
-
-.waves-animation-two {
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background-color: #5c6bc0;
-    z-index: 3;
-    right: 40px;
-    bottom: 35px;
-    transform: scale(7.8);
-    display: none;
-    -webkit-animation: waves-animation-two 0.2s;
-    animation: waves-animation-two 0.2s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes waves-animation-two {
-    to {
-        transform: scale(0);
-    }
-}
-
-@keyframes waves-animation-two {
-    to {
-        transform: scale(0);
-    }
-}
 
 .info-active {
     -webkit-animation: info-active-animation 3s;
@@ -1670,3 +1536,313 @@ input[type="range"] {
     input[type="range"]:focus::-ms-fill-upper {
         background: #f2f2f2;
     }
+
+
+    #song-player{
+        width:100%;
+       
+        position:sticky;
+        bottom:0;
+        background-color:rgb(0, 0, 0, 0/00);
+        z-index:100;
+        margin-bottom:-18px;
+
+    }
+
+
+#player {
+    position: sticky;
+    height: 100%;
+    z-index: 3;
+}
+
+#player-track {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    left: 15px;
+    padding: 13px 22px 10px 184px;
+    background-color: #280b5fa6;
+    border-radius: 15px 15px 0 0;
+    transition: 0.3s ease top;
+    z-index: 1;
+}
+
+    #player-track.active {
+        top: -80px;
+    }
+
+#album-name {
+    color: #54576f;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#track-name {
+    color: #acaebd;
+    font-size: 13px;
+    margin: 2px 0 13px 0;
+}
+
+#track-time {
+    height: 12px;
+    margin-top: -0.5rem;
+    overflow: hidden;
+}
+
+#current-time {
+    float: left;
+}
+
+#track-length {
+    float: right;
+}
+
+#current-time,
+#track-length {
+    color: transparent;
+    font-size: 11px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    transition: 0.3s ease all;
+}
+
+#track-time.active #current-time,
+#track-time.active #track-length {
+    color: #cda8ff;
+    background-color: transparent;
+}
+
+#s-area,
+#seek-bar {
+    position: relative;
+    height: 4px;
+    border-radius: 4px;
+}
+
+#s-area {
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+#ins-time {
+    position: absolute;
+    top: -29px;
+    color: #fff;
+    font-size: 12px;
+    white-space: pre;
+    padding: 5px 6px;
+    border-radius: 4px;
+    display: none;
+}
+
+#s-hover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.2;
+    z-index: 2;
+}
+
+#ins-time,
+#s-hover {
+    background-color: #3b3d50;
+}
+
+#seek-bar {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    background-color: #cda8ff;
+    transition: 0.2s ease width;
+    z-index: 1;
+}
+
+#player-content {
+    position: relative;
+    height: 100%;
+    background-color: #403f3f;
+    box-shadow: 0 30px 80px #656565;
+    border-radius: 15px;
+    z-index: 2;
+}
+
+#album-art {
+    position: relative;
+    top: -40px;
+    width: 6rem;
+    height: 6rem;
+    margin-left: 40px;
+    transform: rotateZ(0);
+    transition: 0.3s ease all;
+    box-shadow: 0 0 0 10px #616161;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+    #album-art.active {
+        top: -60px;
+        box-shadow: 0 0 0 4px #cda8ff, 0 30px 50px -15px #cda8ff;
+    }
+
+    #album-art:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        margin: -10px auto 0 auto;
+        background-color: #d6dee7;
+        border-radius: 50%;
+        box-shadow: inset 0 0 0 2px #fff;
+        z-index: 2;
+    }
+
+    #album-art img {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: -1;
+    }
+
+        #album-art img.active {
+            opacity: 1;
+            z-index: 1;
+        }
+
+    #album-art.active img.active {
+        z-index: 1;
+        animation: rotateAlbumArt 3s linear 0s infinite forwards;
+    }
+
+@keyframes rotateAlbumArt {
+    0% {
+        transform: rotateZ(0);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+
+#buffer-box {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    height: 13px;
+    color: #1f1f1f;
+    font-size: 13px;
+    font-family: Helvetica;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1;
+    padding: 6px;
+    margin: -12px auto 0 auto;
+    background-color: rgba(255, 255, 255, 0.19);
+    opacity: 0;
+    z-index: 2;
+}
+
+#album-art img,
+#buffer-box {
+    transition: 0.1s linear all;
+}
+
+#album-art.buffering img {
+    opacity: 0.25;
+}
+
+    #album-art.buffering img.active {
+        opacity: 0.8;
+        filter: blur(2px);
+        -webkit-filter: blur(2px);
+    }
+
+#album-art.buffering #buffer-box {
+    opacity: 1;
+}
+
+#player-controls {
+    display:inline-flex;
+    position:inherit;
+    bottom:5.5rem;
+    width: 70px;
+    height: 100%;
+    margin: 0.5rem 0.75rem 0 141px;
+    float: right;
+    overflow: hidden;
+}
+
+
+
+#play-pause-button {
+    
+    cursor: pointer;
+
+}
+
+.control {
+    display: flex;
+   
+    justify-content: space-between;
+    width: 45%;
+    float: left;
+    padding: 12px 0;
+}
+
+#download-button {
+   padding-left:4px;
+    cursor: pointer;
+  
+}
+
+
+
+/*#player-controls .control .button {
+    margin-right: 10px;*/ /* Add desired spacing between the buttons */
+/*}*/
+
+
+#logout-btn {
+    background-color: #252060;
+    color: white;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 10px;
+}
+
+.singer-card {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-weight: 500;
+    margin-left: 1.5rem;
+    position: relative;
+    background-color: #ffffff;
+    /*background-image: url("https://michael-zhigulin.github.io/mz-codepen-projects/Material%20Design%20UI%20Audio%20Player/tim_minchin_piano.jpg");*/
+    width: 15rem;
+    height: 15rem;
+    border-radius: 250px;
+    box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+    .singer-card:hover .mask {
+        background-color: rgba(255, 255, 255, 0.1);
+        transition: all 1s;
+    }   
+
+
+

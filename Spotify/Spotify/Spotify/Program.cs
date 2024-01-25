@@ -15,7 +15,10 @@ services.AddDbContextPool<AppDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("SqlServer"));
 });
-
+services.Configure<IISServerOptions>(options =>
+{
+    options.MaxRequestBodySize = int.MaxValue; 
+});
 services.AddIdentity<User, IdentityRole>(options =>
 {
     options.SignIn.RequireConfirmedEmail = true;
@@ -30,6 +33,9 @@ services.AddScoped<IAccountService, AccountService>();
 services.AddTransient<IEmailSender, EmailSender>();
 services.AddTransient<IProfile, ProfileService>();
 services.AddTransient<IHome, HomeService>();
+services.AddTransient<ISong, SongService>();
+services.AddTransient<IArtist, ArtistService>();
+services.AddTransient<IUpload, UploadService>();
 
 var app = builder.Build();
 
@@ -45,11 +51,18 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(
-    name: "Admin",
-    pattern: "/Admin/{controller=Home}/{action=Index}/{id?}");
-
-app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
+using (var scope = app.Services.CreateScope())
+{
+    var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+    var roles = new[] { "Admin", "User" };
+
+    foreach(var role in roles)
+    {
+        if (!await roleManager.RoleExistsAsync(role))
+            await roleManager.CreateAsync(new IdentityRole(role));
+    }
+}
 app.Run();

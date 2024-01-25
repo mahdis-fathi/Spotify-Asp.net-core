@@ -1,49 +1,43 @@
 /* _content/Spotify/Views/Shared/_Layout.cshtml.rz.scp.css */
-/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
 
-a.navbar-brand[b-ciwr53d3e7] {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+.navbar[b-ciwr53d3e7] {
+    background-color: #333333;
+    height:5rem;
+    margin-bottom: 0px;
 }
 
-a[b-ciwr53d3e7] {
-  color: #0077cc;
+.navbar-header[b-ciwr53d3e7] {
+    position: fixed;
 }
 
-.btn-primary[b-ciwr53d3e7] {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+#login-btn[b-ciwr53d3e7] {
+    border: none;
+    display: inline-grid;
+    width: 10rem;
+    height: 3rem;
+    color: white;
+    background-color: #4000ba !important;
+    border-radius: 10px;
+    text-decoration: none;
+    align-content: center;
 }
 
-.nav-pills .nav-link.active[b-ciwr53d3e7], .nav-pills .show > .nav-link[b-ciwr53d3e7] {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+    #login-btn:hover[b-ciwr53d3e7] {
+        background-color: #1d006e !important;
+    }
+
+#logout-btn[b-ciwr53d3e7] {
+    border: none;
+    display: inline-grid;
+    width: 10rem;
+    height: 3rem;
+    color: white;
+    background-color: #1d006e !important;
+    border-radius: 10px;
+    text-decoration: none;
+    align-content: center;
 }
 
-.border-top[b-ciwr53d3e7] {
-  border-top: 1px solid #e5e5e5;
-}
-.border-bottom[b-ciwr53d3e7] {
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.box-shadow[b-ciwr53d3e7] {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-}
-
-button.accept-policy[b-ciwr53d3e7] {
-  font-size: 1rem;
-  line-height: inherit;
-}
-
-.footer[b-ciwr53d3e7] {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px;
-}
+    #logout-btn:hover[b-ciwr53d3e7] {
+        background-color: #4000ba !important;
+    }

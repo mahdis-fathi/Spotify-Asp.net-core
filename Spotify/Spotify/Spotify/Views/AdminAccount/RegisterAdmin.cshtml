@@ -1,0 +1,60 @@
+﻿@model Spotify.ViewModels.RegisterViewModel
+@{
+    ViewData["Title"] = "Admin Register";
+}
+
+
+<div class="login-7">
+    <div class="container">
+        <div class="row login-box">
+            <div class="col-lg-5 col-md-12 bg-img none-992 col-pad-0 align-self-center">
+                <div class="info">
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-12 bg-color-16 align-self-center">
+                <div class="form-section">
+                    <div class="logo-2 clearfix">
+                        <a href="login-7.html">
+                            <img src="assets/img/logos/logo-2.png" alt="logo">
+                        </a>
+                    </div>
+                    <h3>Create an account</h3>
+                    <div class="login-inner-form">
+                        <form asp-controller="AdminAccount" asp-action="RegisterAdmin" asp-area="Admin" method="post">
+                            <div asp-validation-summary="ModelOnly"></div>
+                            <div class="form-group form-box">
+                                <input asp="Username" type="text" name="Username" class="input-text" placeholder="User Name">
+
+                            </div>
+                            <div class="form-group form-box">
+                                <input asp-for="Email" type="email" name="Email" class="input-text" placeholder="Email Address">
+
+                            </div>
+                            <div class="form-group form-box">
+                                <input asp-for="Password" type="password" name="Password" class="input-text" placeholder="Password">
+
+                            </div>
+                            <div class="form-group form-box">
+                                <input type="password" asp-for="ConfirmPass" name="ConfirmPass" class="input-text" placeholder="Confirm Password">
+
+                            </div>
+                            <input hidden="" asp-for="Role" />
+                            <div class="checkbox clearfix">
+                                <div class="form-check checkbox-theme">
+                                    <input class="form-check-input" type="checkbox" value="" id="rememberMe">
+                                    <label class="form-check-label" for="rememberMe">
+                                        I agree to the <a href="#">terms of service</a>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group mb-0">
+                                <button type="submit" class="btn-md btn-theme btn-block">Register</button>
+                            </div>
+                            <p class="text">Already a member?<a href="@Url.Action("LoginAdmin","AdminAccount")"> Login here</a></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

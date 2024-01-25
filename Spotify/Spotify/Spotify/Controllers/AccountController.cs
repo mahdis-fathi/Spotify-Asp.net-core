@@ -29,7 +29,6 @@ namespace Spotify.Controllers
         [HttpPost]
         public async Task<IActionResult> Register(RegisterViewModel registerViewModel)
         {
-            //registerViewModel.Role = "User";
             if (ModelState.IsValid)
             {    
                 var result = await _accountService.Register(registerViewModel);

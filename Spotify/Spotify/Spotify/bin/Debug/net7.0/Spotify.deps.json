@@ -35,6 +35,7 @@
     ".NETCoreApp,Version=v7.0": {
       "Spotify/1.0.0": {
         "dependencies": {
+          "AWSSDK.S3": "3.7.305.12",
           "Microsoft.AspNetCore.Http": "2.2.2",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.0",
           "Microsoft.AspNetCore.Identity.UI": "7.0.0",
@@ -347,6 +348,31 @@
         },
         "compile": {
           "Spotify.dll": {}
+        }
+      },
+      "AWSSDK.Core/3.7.301.7": {
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.301.7"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {}
+        }
+      },
+      "AWSSDK.S3/3.7.305.12": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.301.7"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.S3.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.305.12"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/AWSSDK.S3.dll": {}
         }
       },
       "Azure.Core/1.24.0": {
@@ -3278,6 +3304,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AWSSDK.Core/3.7.301.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-iumPNlshd9fSfiR2fzGG6Q23/ePZb0EFcbBDhfVD6iYqdcGinIRp4Aj0owsKMDH145HayJ6gEM1x7f/3TEpuRQ==",
+      "path": "awssdk.core/3.7.301.7",
+      "hashPath": "awssdk.core.3.7.301.7.nupkg.sha512"
+    },
+    "AWSSDK.S3/3.7.305.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-h1tlXKsPGH8IOtf9jeXoGrU32nISD6biUn6zam1FP73cQrWf6lRtCWfcxrj6C7Tocmsr4YXSFPPN6xt9P1+N8g==",
+      "path": "awssdk.s3/3.7.305.12",
+      "hashPath": "awssdk.s3.3.7.305.12.nupkg.sha512"
     },
     "Azure.Core/1.24.0": {
       "type": "package",
